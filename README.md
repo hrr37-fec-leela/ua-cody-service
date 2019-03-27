@@ -1,6 +1,6 @@
 # Project Name
 
-> Project description
+> Under Armour - Cody's Services
 
 ## Related Projects
 
