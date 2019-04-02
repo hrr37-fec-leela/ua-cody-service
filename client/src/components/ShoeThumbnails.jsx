@@ -13,7 +13,6 @@ class ShoeThumbnails extends React.Component {
     this.props.onThumbnailHover(e.target.src);
   }
 
-
   render() {
     return (
       <div className="shoe-display-thumbnails">

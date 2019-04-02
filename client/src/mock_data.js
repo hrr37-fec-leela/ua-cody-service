@@ -71,16 +71,28 @@ const generateShoeInventoryData = (shoeInventoryData = []) => {
   return JSON.stringify(shoeInventoryData);
 }
 
-const currySix405 = [{
-  productId:"pid3020612",
-  color:"Petrol Blue / Mod Gray",
-  colorNumber:405,
-  right:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-right-405.jpeg",
-  left:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-left-405.jpeg",
-  top:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-top-405.jpeg",
-  bottom:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-bottom-405.jpeg",
-  pair:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-pair-405.jpeg"
-}]
+const currySix405 = [
+  {
+    productId:"pid3020612",
+    color:"Petrol Blue / Mod Gray",
+    colorNumber:405,
+    right:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-right-405.jpeg",
+    left:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-left-405.jpeg",
+    top:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-top-405.jpeg",
+    bottom:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-bottom-405.jpeg",
+    pair:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-pair-405.jpeg"
+  },
+  {
+    productId:"pid3020612",
+    color:"Black / White",
+    colorNumber:300,
+    right:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-right-300.webp",
+    left:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-left-300.jpeg",
+    top:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-top-300.webp",
+    bottom:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-bottom-300.jpeg",
+    pair:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-pair-300.jpeg"
+  },
+]
 
 module.exports.currySix405 = currySix405;
 module.exports.generateShoeImagesData = generateShoeImagesData;

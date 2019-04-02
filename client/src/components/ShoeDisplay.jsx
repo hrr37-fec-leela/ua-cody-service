@@ -6,7 +6,7 @@ const ShoeDisplay = (props) => {
       <img
         className="main-shoe-image"
         src={props.mainDisplay}
-        alt="CurrySix-right"
+        alt="CurrySix-main"
       />
     </div>
   )
