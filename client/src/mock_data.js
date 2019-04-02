@@ -1,7 +1,7 @@
 const faker = require('faker');
 
 const generateShoeImagesData = (shoeImagesData = []) => {
-  for (let i = 0; i < 600; i++) {
+  for (let i = 0; i < 6; i++) {
     shoeImagesData.push ({
       productId: 'pid3020612',
       color: faker.commerce.color(),
@@ -71,6 +71,18 @@ const generateShoeInventoryData = (shoeInventoryData = []) => {
   return JSON.stringify(shoeInventoryData);
 }
 
+const currySix405 = [{
+  productId:"pid3020612",
+  color:"Petrol Blue / Mod Gray",
+  colorNumber:405,
+  right:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-right-405.jpeg",
+  left:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-left-405.jpeg",
+  top:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-top-405.jpeg",
+  bottom:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-bottom-405.jpeg",
+  pair:"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-pair-405.jpeg"
+}]
+
+module.exports.currySix405 = currySix405;
 module.exports.generateShoeImagesData = generateShoeImagesData;
 module.exports.generateShoeInfoData = generateShoeInfoData;
 module.exports.generateShoeInventoryData = generateShoeInventoryData;
