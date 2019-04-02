@@ -9,8 +9,8 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentShoe: mockData.currySix405[0],
-      mainDisplay: mockData.currySix405[0].right
+      currentShoe: mockData.currySix405[1],
+      mainDisplay: mockData.currySix405[1].right
     }
     this.handleThumbnailHover = this.handleThumbnailHover.bind(this);
   }

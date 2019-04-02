@@ -13,51 +13,51 @@
     "productId":"pid3020612",
     "color":"Black / White",
     "colorNumber":300,
-    "right":"http://lorempixel.com/640/480/animals",
-    "left":"http://lorempixel.com/640/480/nightlife",
-    "top":"http://lorempixel.com/640/480/people",
-    "bottom":"http://lorempixel.com/640/480/food",
-    "pair":"http://lorempixel.com/640/480/technics"
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-right-300.webp",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-left-300.jpeg",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-top-300.webp",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-bottom-300.jpeg",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-pair-300.jpeg"
   },
   {
     "productId":"pid3020612",
     "color":"High Vis Yellow / High Vis Yellow",
     "colorNumber":302,
-    "right":"http://lorempixel.com/640/480/food",
-    "left":"http://lorempixel.com/640/480/fashion",
-    "top":"http://lorempixel.com/640/480/food",
-    "bottom":"http://lorempixel.com/640/480/animals",
-    "pair":"http://lorempixel.com/640/480/nature"
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-right-302.jpeg",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-left-302.jpeg",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-top-302.jpeg",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-bottom-302.webp",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-pair-302.jpeg"
   },
   {
     "productId":"pid3020612",
     "color":"White / White",
     "colorNumber":101,
-    "right":"http://lorempixel.com/640/480/transport",
-    "left":"http://lorempixel.com/640/480/nightlife",
-    "top":"http://lorempixel.com/640/480/fashion",
-    "bottom":"http://lorempixel.com/640/480/nature",
-    "pair":"http://lorempixel.com/640/480/business"
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-right-101.webp",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-left-101.webp",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-top-101.webp",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-bottom-101.jpeg",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-pair-101.webp"
   },
   {
     "productId":"pid3020612",
     "color":"Academy / Mango Orange",
     "colorNumber":404,
-    "right":"http://lorempixel.com/640/480/abstract",
-    "left":"http://lorempixel.com/640/480/business",
-    "top":"http://lorempixel.com/640/480/nightlife",
-    "bottom":"http://lorempixel.com/640/480/fashion",
-    "pair":"http://lorempixel.com/640/480/nightlife"
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-right-404.jpeg",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-left-404.jpeg",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-top-404.jpeg",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-bottom-404.jpeg",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-pair-404.jpeg"
   },
   {
     "productId":"pid3020612",
     "color":"Red / Black",
     "colorNumber":603,
-    "right":"http://lorempixel.com/640/480/food",
-    "left":"http://lorempixel.com/640/480/city",
-    "top":"http://lorempixel.com/640/480/nature",
-    "bottom":"http://lorempixel.com/640/480/abstract",
-    "pair":"http://lorempixel.com/640/480/people"
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-right-603.jpeg",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-left-603.jpeg",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-top-603.jpeg",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-bottom-603.jpeg",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-pair-603.jpeg"
   },
     {"productId":"pid74322",
     "color":"green",
