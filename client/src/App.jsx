@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const fakeData = require('./mock_data.js');
+import ShoeDisplay from './components/ShoeDisplay.jsx';
+import ShoeThumbnails from './components/ShoeThumbnails.jsx';
+const mockData = require('./mock_data.js');
 
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      currentShoe: mockData.currySix405[0],
+      mainDisplay: mockData.currySix405[0].right
+    }
+    this.handleThumbnailHover = this.handleThumbnailHover.bind(this);
+  }
+
+  handleThumbnailHover(shoe) {
+    this.setState({
+      mainDisplay: shoe
+    })
   }
 
   render () {
@@ -14,7 +26,17 @@ class App extends React.Component {
       <div className="main-container">
         <nav className="navbar">NavBar</nav>
         <div className="shoe-container">
-          <div className="shoe-display">Shoe Display</div>
+          <div className="shoe-display">
+            <div className="shoe-display-left-margin"></div>
+            <ShoeThumbnails
+              onThumbnailHover={this.handleThumbnailHover}
+              currentShoe={this.state.currentShoe}t
+            />
+            <ShoeDisplay
+              mainDisplay={this.state.mainDisplay}
+            />
+            <div className="shoe-display-bottom">bottom</div>
+          </div>
           <div className="shoe-info">Shoe Info</div>
         </div>
       </div>
