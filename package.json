@@ -10,7 +10,9 @@
   "scripts": {
     "build": "webpack -d --watch",
     "start": "nodemon server/index.js -w database -w server",
-    "seed": "mongoimport --db underarmour --collection shoe_display --file shoeDisplay.json --jsonArray"
+    "seed": "mongoimport --db underarmour --collection shoe_display --file shoeDisplay.json --jsonArray",
+    "test": "jest --verbose",
+    "test-coverage": "jest --verbose --coverage"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -26,12 +28,18 @@
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.7.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^24.7.0",
     "ng-faker": "^1.1.0",
+    "react-test-renderer": "^16.8.6",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev": "^1.1.1"
   }
 }
