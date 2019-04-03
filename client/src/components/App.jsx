@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ShoeDisplay from './components/ShoeDisplay.jsx';
-import ShoeThumbnails from './components/ShoeThumbnails.jsx';
-const mockData = require('./mock_data.js');
+import ShoeDisplay from './ShoeDisplay.jsx';
+import ShoeThumbnails from './ShoeThumbnails.jsx';
+const mockData = require('../mock_data.js/index.js');
 
 
 class App extends React.Component {
@@ -30,7 +29,7 @@ class App extends React.Component {
             <div className="shoe-display-left-margin"></div>
             <ShoeThumbnails
               onThumbnailHover={this.handleThumbnailHover}
-              currentShoe={this.state.currentShoe}t
+              currentShoe={this.state.currentShoe}
             />
             <ShoeDisplay
               mainDisplay={this.state.mainDisplay}
@@ -44,4 +43,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
