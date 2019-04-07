@@ -1,26 +1,45 @@
 import React from 'react';
-const mockData = require('../mock_data.js');
 
 class ShoeSizesDisplay extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      shoeInventory: mockData.shoeInventory405[0],
-      selectedSize: '',
+      shoeSizeDisplay: '',
+      selectedSize: ''
     }
     this.handleSizeClick = this.handleSizeClick.bind(this);
   }
 
   generateShoeSizesArray() {
-    let shoeSizes = [];
-    for (let i = 7; i < 14; i += 0.5) {
-      shoeSizes.push(i);
+    if (this.props.currentShoeColor !== '' && this.props.shoeSizesInventory.length !== 0) {
+      let sizeArray;
+      for (let i = 0; i < this.props.shoeSizesInventory.length; i++) {
+        if (this.props.shoeSizesInventory[i].colorNumber === this.props.currentShoeColor) {
+          sizeArray = Object.keys(this.props.shoeSizesInventory[i].sizeInventory)
+          .map((size) => {
+            return Number(size);
+          })
+          .sort((a, b) => {
+            return a - b;
+          })
+        }
+      }
+      console.log(sizeArray);
+      return sizeArray;
     }
-    for (let i = 14; i < 19; i++) {
-      shoeSizes.push(i);
-    }
-    return shoeSizes;
+    return [];
   }
+
+  getCurrentInventoryList() {
+    let inventory;
+    for (let i = 0; i < this.props.shoeSizesInventory.length; i++) {
+      if (this.props.shoeSizesInventory[i].colorNumber === this.props.currentShoeColor) {
+        inventory = this.props.shoeSizesInventory[i].sizeInventory
+      }
+    }
+    return inventory;
+  }
+
 
   handleSizeClick(e) {
     var size = e.target.title;
@@ -43,8 +62,8 @@ class ShoeSizesDisplay extends React.Component {
             return (
               <li
                 key={index}
-                title={this.state.shoeInventory[size] === 0 ? `${size} Unavailable` : `${size}`}
-                className={this.state.shoeInventory[size] === 0 ? 'shoe-size-square unavailable' : 'shoe-size-square available'}
+                title={this.getCurrentInventoryList()[size] === 0 ? `${size} Unavailable` : `${size}`}
+                className={this.getCurrentInventoryList()[size] === 0 ? 'shoe-size-square unavailable' : 'shoe-size-square available'}
                 onClick={this.handleSizeClick}
               >
                 {size}

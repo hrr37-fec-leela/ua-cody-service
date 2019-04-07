@@ -13,10 +13,10 @@ const ShoeInfo = (props) => {
           {props.currentShoeInfo.category}
         </div>
         <div className = "style-number">
-          Style # {props.currentShoeInfo.sytleId}
+          Style # {props.currentShoeInfo.productId}
         </div>
         <div className="price">
-          {props.currentShoeInfo.price}
+          ${props.currentShoeInfo.price}
         </div>
         <div>
           <span className="bold">Color: </span>
@@ -26,7 +26,10 @@ const ShoeInfo = (props) => {
           shoeList = {props.shoeList}
           onShoeInfoThumbnailActions = {props.onShoeInfoThumbnailActions}
         />
-        <ShoeSizesDisplay />
+        <ShoeSizesDisplay
+          currentShoeColor = {props.currentShoeColor}
+          shoeSizesInventory = {props.shoeSizesInventory}
+        />
         <div>
         <div className="qty">
           <span className="bold">Qty: </span>

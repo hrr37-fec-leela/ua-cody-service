@@ -31,79 +31,79 @@ const generateShoeImagesData = (shoeImagesData = []) => {
 const generateShoeInfoData = (shoeInfoData = []) => {
   for (let i = 0; i < 1; i++) {
     shoeInfoData.push({
-      styleId: '3020612',
+      productId: '3020612',
       name: 'UA Curry 6',
       category: 'Basketball Shoes',
-      price: '$130',
+      price: '130.00',
       fullDesc: 'FRESH. NEW. INNOVATIVE. GROUNDBREAKING. Positive, right? That’s what they said about Stephen when he first stepped on the court 10 years ago. Changing the game isn’t easy and before long, haters came out of the woodwork. But that’s what happens when you make people think about the game, play the game, and even dream about the game…differently. If that’s ruining the game—then he’ll just need to keep on doing it. NO APOLOGIES. ALL LOVE. COMPLETE COMMITMENT.'
     });
   }
 
   for (let i = 0; i < 99; i++) {
     shoeInfoData.push({
-      styleId: faker.random.number(),
+      productId: faker.random.number(),
       name: faker.commerce.productName(),
       category: faker.commerce.productAdjective(),
       price: faker.commerce.price(),
       fullDesc: faker.lorem.paragraph(),
     });
   }
-  // return JSON.stringify(shoeInfoData);
-  return shoeInfoData;
+  return JSON.stringify(shoeInfoData);
 }
 
 const generateShoeInventoryData = (shoeInventoryData = []) => {
-  for (let i = 0; i < 6; i++) {
-    shoeInventoryData.push({
-      productId: 'pid3020612',
-      color: faker.commerce.color(),
-      colorNumber: faker.random.number(),
-      size7: faker.random.number(),
-      size7H: faker.random.number(),
-      size8: faker.random.number(),
-      size8H: faker.random.number(),
-      size9: faker.random.number(),
-      size9H: faker.random.number(),
-      size10: faker.random.number(),
-      size10H: faker.random.number(),
-      size11: faker.random.number(),
-      size11H: faker.random.number(),
-      size12: faker.random.number(),
-      size12H: faker.random.number(),
-      size13: faker.random.number(),
-      size13H: faker.random.number(),
-      size14: faker.random.number(),
-      size15: faker.random.number(),
-      size16: faker.random.number(),
-      size17: faker.random.number(),
-      size18: faker.random.number(),
-    })
-  }
+  // for (let i = 0; i < 6; i++) {
+  //   shoeInventoryData.push({
+  //     productId: '3020612',
+  //     sizeInventory: {
+  //       7: faker.random.number(),
+  //       7.5: faker.random.number(),
+  //       8: faker.random.number(),
+  //       8.5: faker.random.number(),
+  //       9: faker.random.number(),
+  //       9.5: faker.random.number(),
+  //       10: faker.random.number(),
+  //       10.5: faker.random.number(),
+  //       11: faker.random.number(),
+  //       11.5: faker.random.number(),
+  //       12: faker.random.number(),
+  //       12.5: faker.random.number(),
+  //       13: faker.random.number(),
+  //       13.5: faker.random.number(),
+  //       14: faker.random.number(),
+  //       15: faker.random.number(),
+  //       16: faker.random.number(),
+  //       17: faker.random.number(),
+  //       18: faker.random.number(),
+  //     }
+  //   })
+  // }
 
   for (let i = 0; i < 94; i++) {
     shoeInventoryData.push({
-      productId: 'pid' + faker.random.number(),
-      color: faker.commerce.color(),
+      productId: faker.random.number(),
       colorNumber: faker.random.number(),
-      size7: faker.random.number(),
-      size7H: faker.random.number(),
-      size8: faker.random.number(),
-      size8H: faker.random.number(),
-      size9: faker.random.number(),
-      size9H: faker.random.number(),
-      size10: faker.random.number(),
-      size10H: faker.random.number(),
-      size11: faker.random.number(),
-      size11H: faker.random.number(),
-      size12: faker.random.number(),
-      size12H: faker.random.number(),
-      size13: faker.random.number(),
-      size13H: faker.random.number(),
-      size14: faker.random.number(),
-      size15: faker.random.number(),
-      size16: faker.random.number(),
-      size17: faker.random.number(),
-      size18: faker.random.number(),
+      sizeInventory: {
+        7: faker.random.number(),
+        7.5: faker.random.number(),
+        8: faker.random.number(),
+        8.5: faker.random.number(),
+        9: faker.random.number(),
+        9.5: faker.random.number(),
+        10: faker.random.number(),
+        10.5: faker.random.number(),
+        11: faker.random.number(),
+        11.5: faker.random.number(),
+        12: faker.random.number(),
+        12.5: faker.random.number(),
+        13: faker.random.number(),
+        13.5: faker.random.number(),
+        14: faker.random.number(),
+        15: faker.random.number(),
+        16: faker.random.number(),
+        17: faker.random.number(),
+        18: faker.random.number(),
+      }
     })
   }
 
@@ -174,10 +174,10 @@ const currySixList = [
 ]
 
 const shoeInfo = [{
-  sytleId: '3020612',
+  productId: '3020612',
   name: 'UA Curry 6',
   category: 'Basketball Shoes',
-  price: '$130.00',
+  price: '130.00',
   fullDesc: 'FRESH. NEW. INNOVATIVE. GROUNDBREAKING. Positive, right? That’s what they said about Stephen when he first stepped on the court 10 years ago. Changing the game isn’t easy and before long, haters came out of the woodwork. But that’s what happens when you make people think about the game, play the game, and even dream about the game…differently. If that’s ruining the game—then he’ll just need to keep on doing it. NO APOLOGIES. ALL LOVE. COMPLETE COMMITMENT.'
 }]
 

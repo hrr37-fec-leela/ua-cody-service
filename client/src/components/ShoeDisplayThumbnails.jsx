@@ -4,7 +4,7 @@ import React from 'react';
 const ShoeDisplayThumbnails = (props) => {
 
   const handleHoverOver = (e) => {
-    props.onThumbnailHover(e.target.src);
+    props.onShoeDisplayThumbnailHover(e.target.src);
   }
 
   return (
