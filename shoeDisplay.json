@@ -1,8 +1,20 @@
 [
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
+    "color":"White / Royal",
+    "colorNumber":103,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix360-103.mp4",
+    "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-right-103.jpeg",
+    "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-left-103.jpeg",
+    "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-top-103.webp",
+    "bottom":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-bottom-103.jpeg",
+    "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-pair-103.jpeg"
+  },
+  {
+    "productId":"3020612",
     "color":"Petrol Blue / Mod Gray",
     "colorNumber":405,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix360-405.mp4",
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-right-405.jpeg",
     "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-left-405.jpeg",
     "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-top-405.jpeg",
@@ -10,9 +22,10 @@
     "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-pair-405.jpeg"
   },
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
     "color":"Black / White",
     "colorNumber":300,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix360-300.mp4",
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-right-300.webp",
     "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-left-300.jpeg",
     "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-top-300.webp",
@@ -20,9 +33,10 @@
     "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-pair-300.jpeg"
   },
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
     "color":"High Vis Yellow / High Vis Yellow",
     "colorNumber":302,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix360-302.mp4",
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-right-302.jpeg",
     "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-left-302.jpeg",
     "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-top-302.jpeg",
@@ -30,9 +44,10 @@
     "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-pair-302.jpeg"
   },
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
     "color":"White / White",
     "colorNumber":101,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix360-101.mp4",
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-right-101.webp",
     "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-left-101.webp",
     "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-top-101.webp",
@@ -40,7 +55,7 @@
     "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-pair-101.webp"
   },
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
     "color":"Academy / Mango Orange",
     "colorNumber":404,
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-right-404.jpeg",
@@ -50,9 +65,10 @@
     "pair":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-pair-404.jpeg"
   },
   {
-    "productId":"pid3020612",
+    "productId":"3020612",
     "color":"Red / Black",
     "colorNumber":603,
+    "360video":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix360-603.mp4",
     "right":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-right-603.jpeg",
     "left":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-left-603.jpeg",
     "top":"https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-top-603.jpeg",
@@ -802,14 +818,5 @@
     "left":"http://lorempixel.com/640/480/people",
     "top":"http://lorempixel.com/640/480/people",
     "bottom":"http://lorempixel.com/640/480/cats",
-    "pair":"http://lorempixel.com/640/480/sports"},
-    {"productId":"pid67043",
-    "color":"yellow",
-    "colorNumber":18546,
-    "right":"http://lorempixel.com/640/480/nature",
-    "left":"http://lorempixel.com/640/480/sports",
-    "top":"http://lorempixel.com/640/480/cats",
-    "bottom":"http://lorempixel.com/640/480/city",
-    "pair":"http://lorempixel.com/640/480/business"
-  }
+    "pair":"http://lorempixel.com/640/480/sports"}
 ]
