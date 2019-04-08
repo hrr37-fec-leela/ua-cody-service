@@ -1,9 +1,9 @@
 import React from 'react';
-import ShoeThumbnails from '../components/ShoeThumbnails.jsx';
+import ShoeDisplayThumbnails from '../components/ShoeDisplayThumbnails.jsx';
 import { shallow, mount, render } from 'enzyme';
 
 
 test('<ShoeThumbnails />', () => {
-  const wrapper = shallow(<ShoeThumbnails />);
+  const wrapper = shallow(<ShoeDisplayThumbnails />);
   expect(wrapper.exists()).toBe(true);
 })
