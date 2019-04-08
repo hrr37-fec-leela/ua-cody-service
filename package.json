@@ -12,7 +12,8 @@
     "start": "nodemon server/index.js -w database -w server",
     "seed": "mongoimport --db underarmour --collection shoe_display --file shoeDisplay.json --jsonArray",
     "test": "jest --verbose",
-    "test-coverage": "jest --verbose --coverage"
+    "test-coverage": "jest --verbose --coverage",
+    "eslint": "eslint client server database"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
