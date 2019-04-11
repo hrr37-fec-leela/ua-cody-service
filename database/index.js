@@ -18,7 +18,7 @@ const client = new MongoClient(url, { useNewUrlParser: true });
 //   client.close();
 // });
 
-const getShoeList = (callback) => {
+const getShoeList = (id, callback) => {
   client.connect(function(err) {
     assert.equal(null, err);
 
@@ -26,7 +26,7 @@ const getShoeList = (callback) => {
 
     const db = client.db(dbName);
 
-    queryObj = {productId: '3020612'};
+    queryObj = {id: id};
 
     db.collection('shoe_display').find(queryObj).toArray((err, results) => {
       if (err) {
@@ -37,7 +37,7 @@ const getShoeList = (callback) => {
   });
 };
 
-const getShoeInfo = (callback) => {
+const getShoeInfo = (id, callback) => {
   client.connect(function(err) {
     assert.equal(null, err);
 
@@ -45,7 +45,7 @@ const getShoeInfo = (callback) => {
 
     const db = client.db(dbName);
 
-    queryObj = {productId: '3020612'};
+    queryObj = {id: id};
 
     db.collection('shoe_info').find(queryObj).toArray((err, results) => {
       if (err) {
@@ -56,7 +56,7 @@ const getShoeInfo = (callback) => {
   });
 };
 
-const getShoeInventory = (callback) => {
+const getShoeInventory = (id, callback) => {
   client.connect(function(err) {
     assert.equal(null, err);
 
@@ -64,7 +64,7 @@ const getShoeInventory = (callback) => {
 
     const db = client.db(dbName);
 
-    queryObj = {productId: '3020612'};
+    queryObj = {id: id};
 
     db.collection('shoe_inventory').find(queryObj).toArray((err, results) => {
       if (err) {

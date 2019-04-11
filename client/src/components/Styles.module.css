@@ -1,5 +1,5 @@
 /* Main Container */
-.main-container {
+.mainContainer {
   min-height: 1200px;
   min-width: 1200px;
   border: 5px solid blue;
@@ -16,7 +16,7 @@
 }
 
 /* Main Body */
-.shoe-container {
+.shoeContainer {
   grid-area: 2 / 1 / span 1 / span 3;
   display: grid;
   grid-template-rows: 1fr;
@@ -25,7 +25,7 @@
 }
 
 /* Shoe Display */
-.shoe-display {
+.shoeDisplay {
   background-color: #EEEEEE;
   grid-area: 1 / 1 / span 1 / span 3;
   display: grid;
@@ -33,7 +33,7 @@
   grid-template-columns: repeat(2, 100px) 1fr;
 }
 
-.shoe-display-left-margin {
+.shoeDisplayLeftMargin {
   grid-area: 1 / 1 / span 4 / span 1;
 }
 
@@ -46,42 +46,42 @@
   padding-top: 5px;
 }
 
-.shoe-display-thumbnails {
+.shoeDisplayThumbnails {
   grid-area: 2 / 2 / span 3 / span 1;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
 }
 
-.thumbnail-images {
+.thumbnailImages {
   width: 75px;
   height: 91px;
 }
 
-.thumbnail-images:hover {
+.thumbnailImages:hover {
   cursor: pointer;
   border: solid 2px black;
   box-sizing: border-box;
 }
 
-.shoe-display-main {
+.shoeDisplayMain {
   grid-area: 2 / 3 / span 3 / span 1;
   margin-left: -20px;
 }
 
-.main-shoe-image {
+.mainShoeImage {
   width: 565px;
   height: 600px;
   /* box-sizing: border-box; */
 }
 
-.shoe-display-bottom {
+.shoeDisplayBottom {
   background-color: #FFFFFF;
   grid-area: 5 / 1 / span 2 / span 3
 }
 
 /* Shoe Info Section */
-.shoe-info-container {
+.shoeInfoContainer {
   background-color:#FFFFFF;
   grid-area: 1 / 4 / span 1 / span 2;
   display: grid;
@@ -90,18 +90,18 @@
   color: #1d1d1d;
 }
 
-.shoe-info {
+.shoeInfo {
   grid-area: 2 / 1 / span 1 / span 1;
   padding-left: 25px;
   font-size:13px;
 }
 
-.shoe-Name {
+.shoeName {
   font-size: 24px;
   font-weight: 600;
 }
 
-.style-number {
+.styleNumber {
   margin-top: 15px;
   color: #767676;
   line-height: 15px;
@@ -116,14 +116,14 @@
   font-weight: 600;
 }
 
-.shoe-info-thumbnail {
+.shoeInfoThumbnail {
   width: 48px;
   height: 51px;
   margin-right: 5px;
   margin-top: 20px;
 }
 
-.shoe-info-thumbnail:hover {
+.shoeInfoThumbnail:hover {
   cursor: pointer;
   border: solid 2px #1d1d1d;
   box-sizing: border-box;
@@ -134,17 +134,17 @@
   box-sizing: border-box;
 }
 
-.shoe-size-container {
+.shoeSizeContainer {
   margin-top: 20px;
 }
 
-.shoe-size-list {
+.shoeSizeList {
   list-style: none;
   padding-left: 0px;
   margin-right: 40px;
 }
 
-.shoe-size-square {
+.shoeSizeSquare {
   width: 40px;
   height: 30px;
   display: inline-block;
@@ -180,7 +180,7 @@
   margin-bottom: 10px;
 }
 
-#addtocart-quantity {
+.addtocartQuantity {
   width: 100px;
   height: 50px;
   font-size: 15px;
@@ -189,7 +189,7 @@
   border: 1px solid #767676;
 }
 
-.addtobag-button {
+.addtobagButton {
   width: 185px;
   height: 50px;
   display: inline-block;
@@ -199,12 +199,12 @@
   color: #ffffff;
 }
 
-.addtobag-button:hover {
+.addtobagButton:hover {
   background-color: #1d1d1d;
   cursor: pointer;
 }
 
-.other-checkout-buttons {
+.otherCheckoutButtons {
   width: 310px;
   height: 50px;
   background-color: #f0f0f0;
@@ -213,12 +213,12 @@
   font-size: 15px;
 }
 
-.other-checkout-buttons:hover {
+.otherCheckoutButtons:hover {
   opacity: .8;
   cursor: pointer;
 }
 
-.shoe-info-right-margin {
+.shoeInfoRightMargin {
   background-color: #EEEEEE;
   grid-area: 1 / 2 / span 2 / span 1;
 }
