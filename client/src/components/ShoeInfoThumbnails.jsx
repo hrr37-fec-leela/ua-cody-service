@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Styles.module.css';
 
 class ShoeInfoThumbnails extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       selectedShoeIndex: 0,
-    }
+    };
     this.handleThumbnailMouseEnter = this.handleThumbnailMouseEnter.bind(this);
     this.handleThumbnailMouseLeave = this.handleThumbnailMouseLeave.bind(this);
     this.handleThumbnailClick = this.handleThumbnailClick.bind(this);
@@ -23,14 +24,14 @@ class ShoeInfoThumbnails extends React.Component {
   handleThumbnailClick(e) {
     this.setState({
       selectedShoeIndex: Number(e.target.alt.slice(0, 1))
-    })
+    });
   }
 
   getThumbnailClassName(index) {
     if (index === this.state.selectedShoeIndex) {
-      return 'shoe-info-thumbnail selected'
+      return `${styles.shoeInfoThumbnail} ${styles.selected}`;
     }
-    return 'shoe-info-thumbnail'
+    return `${styles.shoeInfoThumbnail}`;
   }
 
   render() {
@@ -41,7 +42,7 @@ class ShoeInfoThumbnails extends React.Component {
             <span key = {index}>
               <img
                 className={this.getThumbnailClassName(index)}
-                src={shoe.right}
+                src={shoe.images.right}
                 alt={`${index} - Shoe Thumbnail`}
                 onMouseEnter={this.handleThumbnailMouseEnter}
                 onMouseLeave={this.handleThumbnailMouseLeave}
@@ -51,7 +52,7 @@ class ShoeInfoThumbnails extends React.Component {
           );
         })}
       </div>
-    )
+    );
   }
 }
 

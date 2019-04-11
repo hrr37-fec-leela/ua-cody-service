@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './Styles.module.css';
 
 const ShoeDisplay = (props) => {
   return (
-    <div className="shoe-display-main">
+    <div className={styles.shoeDisplayMain}>
       <img
-        className="main-shoe-image"
+        className={styles.mainShoeImage}
         src={props.mainDisplay}
         alt="CurrySix-main"
       />
@@ -14,7 +15,7 @@ const ShoeDisplay = (props) => {
         controls loop>
       </video> */}
     </div>
-  )
-}
+  );
+};
 
 export default ShoeDisplay;

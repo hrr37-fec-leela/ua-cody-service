@@ -2,16 +2,25 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3006;
+const path = require('path');
 
 const db = require('../database/index.js');
+
 
 app.use(bodyParser.json());
 
 app.use(express.static('public/dist'));
 
 //============ Routes ============//
-app.get('/api/shoes', (req, res) => {
-  db.getShoeList((err, results) => {
+
+app.get(`/:id`, (req, res) => {
+  let getPath = path.join(__dirname, '..', 'public', 'dist', 'index.html');
+  res.sendFile(getPath);
+});
+
+app.get('/api/shoes/:id', (req, res) => {
+  let id = Number(req.params.id);
+  db.getShoeList(id, (err, results) => {
     if (err) {
       console.error('failed to get shoeList');
     }
@@ -20,8 +29,9 @@ app.get('/api/shoes', (req, res) => {
   });
 });
 
-app.get('/api/shoeInfo', (req, res) => {
-  db.getShoeInfo((err, results) => {
+app.get('/api/shoeInfo/:id', (req, res) => {
+  let id = Number(req.params.id);
+  db.getShoeInfo(id, (err, results) => {
     if (err) {
       console.error('failed to get shoeInfo');
     }
@@ -30,8 +40,9 @@ app.get('/api/shoeInfo', (req, res) => {
   });
 });
 
-app.get('/api/sizesInventory', (req, res) => {
-  db.getShoeInventory((err, results) => {
+app.get('/api/sizesInventory/:id', (req, res) => {
+  let id = Number(req.params.id);
+  db.getShoeInventory(id, (err, results) => {
     if (err) {
       console.error('failed to get sizesInventory');
     }

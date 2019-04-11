@@ -1,36 +1,122 @@
 const faker = require('faker');
 
 const generateShoeImagesData = (shoeImagesData = []) => {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 1; i < 2; i++) {
     shoeImagesData.push ({
-      productId: 'pid3020612',
-      color: faker.commerce.color(),
-      colorNumber: faker.random.number(),
-      right: faker.random.image(),
-      left: faker.random.image(),
-      top: faker.random.image(),
-      bottom: faker.random.image(),
-      sideAngle: faker.random.image(),
+      id: i,
+      productId: '3020612',
+      shoeImages: [
+        {
+          colorNumber: 103,
+          colorName: 'White / Royal',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix360-103.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-right-103.jpeg',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-left-103.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-top-103.webp',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-bottom-103.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-103/CurrySix-pair-103.jpeg'
+          }
+        },
+        {
+          colorNumber: 405,
+          colorName: 'Petrol Blue / Mod Gray',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix360-405.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-right-405.jpeg',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-left-405.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-top-405.jpeg',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-bottom-405.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-405/CurrySix-pair-405.jpeg'
+          }
+        },
+        {
+          colorNumber: 300,
+          colorName: 'Black / White',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix360-300.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-right-300.webp',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-left-300.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-top-300.webp',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-bottom-300.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-300/CurrySix-pair-300.jpeg'
+          }
+        },
+        {
+          colorNumber: 302,
+          colorName: 'High Vis Yellow / High Vis Yellow',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix360-302.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-right-302.jpeg',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-left-302.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-top-302.jpeg',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-bottom-302.webp',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-302/CurrySix-pair-302.jpeg'
+          }
+        },
+        {
+          colorNumber: 101,
+          colorName: 'White / White',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix360-101.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-right-101.webp',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-left-101.webp',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-top-101.webp',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-bottom-101.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-101/CurrySix-pair-101.webp'
+          }
+        },
+        {
+          colorNumber: 404,
+          colorName: 'Academy / Mango Orange',
+          images: {
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-right-404.jpeg',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-left-404.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-top-404.jpeg',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-bottom-404.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-404/CurrySix-pair-404.jpeg'
+          }
+        },
+        {
+          colorNumber: 603,
+          colorName: 'Red / Black',
+          images: {
+            video: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix360-603.mp4',
+            right: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-right-603.jpeg',
+            left: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-left-603.jpeg',
+            top: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-top-603.jpeg',
+            bottom: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-bottom-603.jpeg',
+            pair: 'https://s3-us-west-2.amazonaws.com/hrr37-fec-underarmour-images/CurrySix-603/CurrySix-pair-603.jpeg'
+          }
+        }
+      ]
     });
   }
-  for (let i = 0; i < 94; i++) {
+  for (let i = 2; i < 101; i++) {
     shoeImagesData.push ({
-      productId: 'pid' + faker.random.number(),
-      color: faker.commerce.color(),
-      colorNumber: faker.random.number(),
-      right: faker.random.image(),
-      left: faker.random.image(),
-      top: faker.random.image(),
-      bottom: faker.random.image(),
-      sideAngle: faker.random.image(),
+      id: i,
+      productId: faker.random.number(),
+      shoeImages: [{
+        colorName: faker.commerce.color(),
+        colorNumber: faker.random.number(),
+        images: {
+          video: faker.random.image(),
+          right: faker.random.image(),
+          left: faker.random.image(),
+          top: faker.random.image(),
+          bottom: faker.random.image(),
+          pair: faker.random.image(),
+        }
+      }]
     });
   }
   return JSON.stringify(shoeImagesData);
 };
 
 const generateShoeInfoData = (shoeInfoData = []) => {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 1; i < 2; i++) {
     shoeInfoData.push({
+      id: 1,
       productId: '3020612',
       name: 'UA Curry 6',
       category: 'Basketball Shoes',
@@ -39,8 +125,9 @@ const generateShoeInfoData = (shoeInfoData = []) => {
     });
   }
 
-  for (let i = 0; i < 99; i++) {
+  for (let i = 2; i < 101; i++) {
     shoeInfoData.push({
+      id: i,
       productId: faker.random.number(),
       name: faker.commerce.productName(),
       category: faker.commerce.productAdjective(),
@@ -79,8 +166,9 @@ const generateShoeInventoryData = (shoeInventoryData = []) => {
   //   })
   // }
 
-  for (let i = 0; i < 94; i++) {
+  for (let i = 2; i < 101; i++) {
     shoeInventoryData.push({
+      id: i,
       productId: faker.random.number(),
       colorNumber: faker.random.number(),
       sizeInventory: {

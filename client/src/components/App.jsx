@@ -2,12 +2,13 @@ import React from 'react';
 import ShoeDisplay from './ShoeDisplay.jsx';
 import ShoeDisplayThumbnails from './ShoeDisplayThumbnails.jsx';
 import ShoeInfo from './ShoeInfo.jsx';
+import styles from './Styles.module.css';
 const mockData = require('../mock_data.js');
 
-
+console.log(styles.navbar)
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       shoeList: [],
       shoeDisplayThumbnails: [],
@@ -15,75 +16,80 @@ class App extends React.Component {
       currentShoeInfo: [],
       currentShoeColor: '',
       shoeSizesInventory: []
-    }
+    };
     this.handleShoeDisplayThumbnailHover = this.handleShoeDisplayThumbnailHover.bind(this);
     this.handleShoeInfoThumbnailActions = this.handleShoeInfoThumbnailActions.bind(this);
   }
 
   getShoeList() {
-    fetch('/api/shoes')
-    .then(response => response.json())
-    .then(shoes => {
-      this.setState({
-        shoeList: shoes,
-        shoeDisplayThumbnails: shoes[0],
-        mainShoeDisplayImage: shoes[0].right,
-        currentShoeColor: shoes[0].colorNumber
+    let id = window.location.pathname.slice(1);
+    fetch(`/api/shoes/${id}`)
+      .then(response => response.json())
+      .then(shoes => {
+        this.setState({
+          shoeList: shoes[0].shoeImages,
+          shoeDisplayThumbnails: shoes[0].shoeImages[0].images,
+          mainShoeDisplayImage: shoes[0].shoeImages[0].images.right,
+          currentShoeColor: shoes[0].shoeImages[0].colorNumber,
+          currentColorName: shoes[0].shoeImages[0].colorName
+        });
       })
-    })
-    .catch(error => console.error(error))
+      .catch(error => console.error(error));
   }
 
   getShoeInfo() {
-    fetch('/api/shoeInfo')
-    .then(response => response.json())
-    .then(shoeInfo => {
-      this.setState({
-        currentShoeInfo: shoeInfo[0]
+    let id = window.location.pathname.slice(1);
+    fetch(`/api/shoeInfo/${id}`)
+      .then(response => response.json())
+      .then(shoeInfo => {
+        this.setState({
+          currentShoeInfo: shoeInfo
+        });
       })
-    })
-    .catch(error => console.error(error))
+      .catch(error => console.error(error));
   }
 
   getShoeSizesInventory() {
-    fetch('/api/sizesInventory')
-    .then(response => response.json())
-    .then(inventory => {
-      this.setState({
-        shoeSizesInventory: inventory
+    let id = window.location.pathname.slice(1);
+    fetch(`/api/sizesInventory/${id}`)
+      .then(response => response.json())
+      .then(inventory => {
+        this.setState({
+          shoeSizesInventory: inventory[0].sizeInventory
+        });
       })
-    })
-    .catch(error => console.error(error))
+      .catch(error => console.error(error));
   }
 
   handleShoeDisplayThumbnailHover(shoe) {
     this.setState({
       mainShoeDisplayImage: shoe
-    })
+    });
   }
 
   handleShoeInfoThumbnailActions(index) {
     this.setState({
-      shoeDisplayThumbnails: this.state.shoeList[index],
-      mainShoeDisplayImage: this.state.shoeList[index].right,
-      currentShoeColor: this.state.shoeList[index].colorNumber
-    })
+      shoeDisplayThumbnails: this.state.shoeList[index].images,
+      mainShoeDisplayImage: this.state.shoeList[index].images.right,
+      currentShoeColor: this.state.shoeList[index].colorNumber,
+      currentColorName: this.state.shoeList[index].colorName,
+    });
   }
 
   componentDidMount() {
-    this.getShoeList()
-    this.getShoeInfo()
-    this.getShoeSizesInventory()
+    this.getShoeList();
+    this.getShoeInfo();
+    this.getShoeSizesInventory();
   }
 
   render () {
     return (
-      <div className="main-container">
-        <nav className="navbar">NavBar</nav>
-        <div className="shoe-container">
-          <div className="shoe-display">
-            <div className="shoe-display-left-margin"></div>
-            <div className="heart">
+      <div className={styles.mainContainer}>
+        <nav className={styles.navbar}>NavBar</nav>
+        <div className={styles.shoeContainer}>
+          <div className={styles.shoeDisplay}>
+            <div className={styles.shoeDisplayLeftMargin}></div>
+            <div className={styles.heart}>
               <i className="fa fa-heart-o" aria-hidden="true"></i>
             </div>
             <ShoeDisplayThumbnails
@@ -94,7 +100,7 @@ class App extends React.Component {
               mainDisplay={this.state.mainShoeDisplayImage}
             />
             {/* below is just a placeholder for now */}
-            <div className="shoe-display-bottom">bottom</div>
+            <div className={styles.shoeDisplayBottom}>bottom</div>
           </div>
           <ShoeInfo
             shoeDisplayThumbnails = {this.state.shoeDisplayThumbnails}
@@ -102,6 +108,7 @@ class App extends React.Component {
             shoeList = {this.state.shoeList}
             onShoeInfoThumbnailActions = {this.handleShoeInfoThumbnailActions}
             currentShoeColor = {this.state.currentShoeColor}
+            currentColorName = {this.state.currentColorName}
             shoeSizesInventory = {this.state.shoeSizesInventory}
           />
         </div>
