@@ -6,7 +6,7 @@ import styles from './Styles.module.css';
 const mockData = require('../mock_data.js');
 
 console.log(styles.navbar)
-class App extends React.Component {
+class ShoeGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +23,7 @@ class App extends React.Component {
 
   getShoeList() {
     let id = window.location.pathname.slice(1);
-    fetch(`/api/shoes/${id}`)
+    fetch(`http://localhost:3006/api/shoes/${id}`)
       .then(response => response.json())
       .then(shoes => {
         this.setState({
@@ -39,7 +39,7 @@ class App extends React.Component {
 
   getShoeInfo() {
     let id = window.location.pathname.slice(1);
-    fetch(`/api/shoeInfo/${id}`)
+    fetch(`http://localhost:3006/api/shoeInfo/${id}`)
       .then(response => response.json())
       .then(shoeInfo => {
         this.setState({
@@ -51,7 +51,7 @@ class App extends React.Component {
 
   getShoeSizesInventory() {
     let id = window.location.pathname.slice(1);
-    fetch(`/api/sizesInventory/${id}`)
+    fetch(`http://localhost:3006/api/sizesInventory/${id}`)
       .then(response => response.json())
       .then(inventory => {
         this.setState({
@@ -117,4 +117,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default ShoeGallery;
