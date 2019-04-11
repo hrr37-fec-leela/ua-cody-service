@@ -10,8 +10,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 </head>
 <body>
-  <div id="root"></div>
+  <div id="shoegallery"></div>
   <script src="https://use.fontawesome.com/695d9d573a.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script type="text/javascript" src="bundle-cody.js"></script>
+  <script>
+    ReactDOM.render(
+      React.createElement(ShoeGallery),
+      document.getElementById('shoegallery')
+    );
+  </script>
 </body>
 </html>
