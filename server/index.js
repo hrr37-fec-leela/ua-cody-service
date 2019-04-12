@@ -13,6 +13,11 @@ app.use(express.static('public/dist'));
 
 //============ Routes ============//
 
+app.get(`/`, (req, res) => {
+  let getPath = path.join(__dirname, '..', 'public', 'dist', 'index.html');
+  res.sendFile(getPath);
+});
+
 app.get(`/:id`, (req, res) => {
   let getPath = path.join(__dirname, '..', 'public', 'dist', 'index.html');
   res.sendFile(getPath);

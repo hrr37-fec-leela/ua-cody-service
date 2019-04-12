@@ -23,6 +23,11 @@ class ShoeSizesDisplay extends React.Component {
           .sort((a, b) => {
               return a - b;
             });
+        // //
+        // let sizeArray = Object.keys(this.props.shoeSizesInventory[color])
+        //   .map(Number)
+        //   .sort();
+        // //
         return sizeArray;
       } else {
         let sizeArray = Object.keys(this.props.shoeSizesInventory)
@@ -32,6 +37,9 @@ class ShoeSizesDisplay extends React.Component {
           .sort((a, b) => {
               return a - b;
             });
+        // let sizeArray = Object.keys(this.props.shoeSizesInventory[color])
+        //   .map(Number)
+        //   .sort();
         return sizeArray;
       }
     }

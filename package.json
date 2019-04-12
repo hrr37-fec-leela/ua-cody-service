@@ -9,10 +9,10 @@
   },
   "scripts": {
     "build": "webpack -d --watch",
-    "start": "nodemon server/index.js -w database -w server",
-    "seed-shoeDisplay": "mongoimport --db underarmour --collection shoe_display --file shoeDisplay.json --jsonArray",
-    "seed-shoeInfo": "mongoimport --db underarmour --collection shoe_info --file shoeInfo.json --jsonArray",
-    "seed-shoeInventory": "mongoimport --db underarmour --collection shoe_inventory --file shoeInventory.json --jsonArray",
+    "start": "node server/index.js -w database -w server",
+    "seed-shoeDisplay": "mongoimport --db underarmour --collection shoe_display --file jsonSeedFilesDB/shoeDisplay.json --jsonArray",
+    "seed-shoeInfo": "mongoimport --db underarmour --collection shoe_info --file jsonSeedFilesDB/shoeInfo.json --jsonArray",
+    "seed-shoeInventory": "mongoimport --db underarmour --collection shoe_inventory --file jsonSeedFilesDB/shoeInventory.json --jsonArray",
     "test": "jest --verbose",
     "test-coverage": "jest --verbose --coverage",
     "update-snaps": "jest --updateSnapshot",
@@ -27,8 +27,7 @@
     "nodemon": "^1.18.10",
     "path": "^0.12.7",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^2.1.8"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -41,11 +40,9 @@
     "enzyme-adapter-react-16": "^1.11.2",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
     "jest": "^24.7.0",
-    "ng-faker": "^1.1.0",
     "react-test-renderer": "^16.8.6",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev": "^1.1.1"
+    "webpack-cli": "^3.3.0"
   }
 }
