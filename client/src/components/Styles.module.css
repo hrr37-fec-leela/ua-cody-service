@@ -2,17 +2,146 @@
 .mainContainer {
   min-height: 1200px;
   min-width: 1200px;
-  border: 5px solid blue;
+  width:100%;
   display: grid;
-  grid-template-rows: 130px 1fr;
+  grid-template-rows: 98px 1fr;
   grid-template-columns: 2fr 1fr;
   box-sizing: border-box;
 }
 
 /* NavBar */
 .navbar {
-  border: 5px solid black;
   grid-area: 1 / 1 / span 1 / span 3;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid #d2d2d2;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+
+.messages {
+  background-color: #1d1d1d;
+  color: #FFFFFF;
+  height: 30px;
+  width: 100%;
+  font-size: 13px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr)
+}
+
+.freeReturns {
+  grid-area: 1 / 1 / span 1 / span 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.freeReturns:hover {
+  cursor: pointer;
+}
+
+.utilityLinksContainer {
+  grid-area: 1 / 5 / span 1 / span 1;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.utilityLinks:hover{
+  cursor: pointer;
+}
+
+.US {
+  margin-right:5px;
+}
+
+.americanFlag {
+  height:12px;
+  width:24px;
+  margin-right: 5px;
+}
+
+.navbartop {
+  height:76px;
+  width:100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #FFFFFF;
+}
+
+.navbarLogo {
+  grid-area: 1 / 1 / span 1 / span 1;
+  display:flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.uaLogo {
+  height:60px;
+  width:63px;
+}
+
+.uaLogo:hover{
+  cursor: pointer;
+}
+
+.navbartopLinks {
+  grid-area: 1 / 1 / span 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.individualNavLinks {
+  margin-right: 40px;
+}
+
+.individualNavLinks:hover {
+  cursor: pointer;
+}
+
+.navbarIconContainer {
+  grid-area: 1 / 3 / span 1 / span 1;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+}
+
+.searchBar {
+  height:28px;
+  width:159px;
+  border: 1px solid #d2d2d2;
+  font-size:13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.searchBarIcon {
+  height:30px;
+  width:30px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  margin-right: 15px;
+}
+
+.searchBarIcon:hover{
+  cursor: pointer;
+}
+
+.navbarIcons {
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.navbarIcons:hover {
+  cursor: pointer;
 }
 
 /* Main Body */
@@ -75,9 +204,15 @@
   /* box-sizing: border-box; */
 }
 
-.shoeDisplayBottom {
+.shoeDisplayFullDesc {
   background-color: #FFFFFF;
-  grid-area: 5 / 1 / span 2 / span 3
+  grid-area: 5 / 1 / span 2 / span 3;
+  display: flex;
+  justify-content:center;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 80px;
+  font-size:18px;
 }
 
 /* Shoe Info Section */
@@ -134,6 +269,7 @@
   box-sizing: border-box;
 }
 
+/* ShoeSizeDisplay Component */
 .shoeSizeContainer {
   margin-top: 20px;
 }
@@ -209,7 +345,7 @@
   height: 50px;
   background-color: #f0f0f0;
   color: #1d1d1d;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 15px;
 }
 

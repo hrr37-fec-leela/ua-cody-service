@@ -1,11 +1,10 @@
 import React from 'react';
+import NavBar from './NavBar.jsx';
 import ShoeDisplay from './ShoeDisplay.jsx';
 import ShoeDisplayThumbnails from './ShoeDisplayThumbnails.jsx';
 import ShoeInfo from './ShoeInfo.jsx';
 import styles from './Styles.module.css';
-const mockData = require('../mock_data.js');
 
-console.log(styles.navbar)
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -83,9 +82,14 @@ class App extends React.Component {
   }
 
   render () {
+    if (this.state.currentShoeInfo.length === 0) {
+      return (
+        <NavBar />
+      );
+    }
     return (
       <div className={styles.mainContainer}>
-        <nav className={styles.navbar}>NavBar</nav>
+        <NavBar />
         <div className={styles.shoeContainer}>
           <div className={styles.shoeDisplay}>
             <div className={styles.shoeDisplayLeftMargin}></div>
@@ -99,8 +103,9 @@ class App extends React.Component {
             <ShoeDisplay
               mainDisplay={this.state.mainShoeDisplayImage}
             />
-            {/* below is just a placeholder for now */}
-            <div className={styles.shoeDisplayBottom}>bottom</div>
+            <div className={styles.shoeDisplayFullDesc}>
+              {this.state.currentShoeInfo[0].fullDesc}
+            </div>
           </div>
           <ShoeInfo
             shoeDisplayThumbnails = {this.state.shoeDisplayThumbnails}
