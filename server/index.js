@@ -3,10 +3,11 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3006;
 const path = require('path');
+const cors = require('cors');
 
 const db = require('../database/index.js');
 
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static('public/dist'));
