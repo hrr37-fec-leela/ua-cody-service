@@ -24,3 +24,6 @@ coverage
 build/
 public/dist/bundle.js
 
+# hidden folder
+hidden/
+

@@ -10,9 +10,9 @@
   "scripts": {
     "build": "webpack -d --watch",
     "start": "node server/index.js -w database -w server",
-    "seed-shoeDisplay": "mongoimport --db underarmour --collection shoe_display --file jsonSeedFilesDB/shoeDisplay.json --jsonArray",
-    "seed-shoeInfo": "mongoimport --db underarmour --collection shoe_info --file jsonSeedFilesDB/shoeInfo.json --jsonArray",
-    "seed-shoeInventory": "mongoimport --db underarmour --collection shoe_inventory --file jsonSeedFilesDB/shoeInventory.json --jsonArray",
+    "seed-shoeDisplay": "mongoimport --host mysandboxcluster-shard-00-01-fipdy.mongodb.net:27017 --db underarmour --type json --collection shoe_display --file jsonSeedFilesDB/shoeDisplay.json --jsonArray --authenticationDatabase admin --ssl --username codysmith287 --password <password>",
+    "seed-shoeInfo": "mongoimport --host mysandboxcluster-shard-00-01-fipdy.mongodb.net:27017 --db underarmour --type json --collection shoe_info --file jsonSeedFilesDB/shoeInfo.json --jsonArray --authenticationDatabase admin --ssl --username codysmith287 --password <password>",
+    "seed-shoeInventory": "mongoimport --host mysandboxcluster-shard-00-01-fipdy.mongodb.net:27017 --db underarmour --type json --collection shoe_inventory --file jsonSeedFilesDB/shoeInventory.json --jsonArray --authenticationDatabase admin --ssl --username codysmith287 --password <password>",
     "test": "jest --verbose",
     "test-coverage": "jest --verbose --coverage",
     "update-snaps": "jest --updateSnapshot",
