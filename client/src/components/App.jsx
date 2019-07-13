@@ -5,7 +5,7 @@ import ShoeDisplayThumbnails from './ShoeDisplayThumbnails.jsx';
 import ShoeInfo from './ShoeInfo.jsx';
 import styles from './Styles.module.css';
 
-class ShoeGallery extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,7 +22,8 @@ class ShoeGallery extends React.Component {
 
   getShoeList() {
     let id = window.location.pathname.slice(1);
-    fetch(`http://localhost:3006/api/shoes/${id}`)
+    let origin = window.location.origin;
+    fetch(`${origin}/api/shoes/${id}`)
       .then(response => response.json())
       .then(shoes => {
         this.setState({
@@ -38,7 +39,8 @@ class ShoeGallery extends React.Component {
 
   getShoeInfo() {
     let id = window.location.pathname.slice(1);
-    fetch(`http://localhost:3006/api/shoeInfo/${id}`)
+    let origin = window.location.origin;
+    fetch(`${origin}/api/shoeInfo/${id}`)
       .then(response => response.json())
       .then(shoeInfo => {
         this.setState({
@@ -50,7 +52,8 @@ class ShoeGallery extends React.Component {
 
   getShoeSizesInventory() {
     let id = window.location.pathname.slice(1);
-    fetch(`http://localhost:3006/api/sizesInventory/${id}`)
+    let origin = window.location.origin;
+    fetch(`${origin}/api/sizesInventory/${id}`)
       .then(response => response.json())
       .then(inventory => {
         this.setState({
@@ -122,4 +125,4 @@ class ShoeGallery extends React.Component {
   }
 }
 
-export default ShoeGallery;
+export default App;

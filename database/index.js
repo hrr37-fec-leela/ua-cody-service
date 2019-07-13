@@ -2,9 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const password = require('../hidden/mongoAtlas.js');
 
-const url = `mongodb+srv://codysmith287:${password.altasPassword}@mysandboxcluster-fipdy.mongodb.net/test?retryWrites=true`;
-
-"mongodb+srv://codysmith287:<password>@mysandboxcluster-fipdy.mongodb.net/test?retryWrites=true";
+const url = `mongodb+srv://codysmith287:${password.altasPassword}@mysandboxcluster-fipdy.mongodb.net/test?retryWrites=true`;``
 
 const dbName = 'underarmour';
 

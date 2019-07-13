@@ -24,7 +24,7 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    filename: 'bundle-cody.js',
+    filename: 'bundle.js',
     path: __dirname + '/public/dist'
   }
 };
